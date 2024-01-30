@@ -8,5 +8,6 @@ namespace RiftRealm.Entity
 {
     public class FloorTile : TileBase
     {
+        public override bool IsIndoors => true;
     }
 }

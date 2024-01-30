@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace RiftRealm.Entity
 {
-    public interface IEntity
+    public class Wall : TileBase
     {
-        public bool IsIndoors { get; }
-        public bool IsObstructive { get; }
+        public new bool IsObstructive => true;
     }
 }

@@ -9,7 +9,8 @@ namespace RiftRealm.Entity
     public abstract class TileBase : IEntity
     {
         bool _indoors;
-
-        public bool IsIndoors => _indoors;
+        bool _obstructive;
+        public virtual bool IsIndoors => _indoors;
+        public virtual bool IsObstructive => _obstructive;
     }
 }
